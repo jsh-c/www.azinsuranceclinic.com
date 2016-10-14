@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="JavaScript" type="text/javascript">
+<!-- hide JavaScript from non-JavaScript browsers
+// This script is a simplified adaptation from the
+// JavaScript Browser Sniffer
+// Eric Krok, Andy King, Michel Plungjan
+// see http://www.webreference.com/ for more information
+
+var agt=navigator.userAgent.toLowerCase();
+var appVer = navigator.appVersion.toLowerCase();
+var is_minor = parseFloat(appVer);
+var is_major = parseInt(is_minor);
+var iePos = appVer.indexOf('msie');
+if (iePos !=-1) {
+is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+is_major = parseInt(is_minor);
+}
+var is_getElementById = (document.getElementById) ? "true" : "false";
+var is_getElementsByTagName = (document.getElementsByTagName) ? "true" : "false";
+var is_documentElement = (document.documentElement) ? "true" : "false";
+var is_ie = ((iePos!=-1));
+var is_ie6 = (is_ie && is_major == 6);
+
+if(is_ie6) {
+     document.write("<link href='arizonaclinicie6.css' type='text/css' rel='stylesheet' />");
+} else {
+     document.write("<link href='arizonaclinic.css' type='text/css' rel='stylesheet' />");
+}
+// -->
+</script>
+<title>Arizona Clinic Insurance</title>
+	<script language='javascript' type='text/JavaScript'>
+		function isNumeric(string)
+		{
+			var numaric = string;
+			for(var j=0; j<numaric.length; j++){
+				  
+				var alphaa = numaric.charAt(j);
+				var hh = alphaa.charCodeAt(0);
+				if((hh > 47 && hh<59)){
+				    //do nothing
+				}
+				else
+					 return false;
+			}
+		 return true;
+		}
+		function CheckRequiredFields() {
+		     var pass = "yes";
+			
+		     if(document.mailform.input2.value == null || document.mailform.input2.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input4.value == null || document.mailform.input4.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     } else if(!isNumeric(document.mailform.input4.value)) {
+		          pass = "no";
+		          alert('Please use only numbers in phone number fields');
+		          return false;
+			 }
+		     
+		     if(document.mailform.input5.value == null || document.mailform.input5.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input6.value == null || document.mailform.input6.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input7.value == null || document.mailform.input7.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input9.value == null || document.mailform.input9.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input10.value == null || document.mailform.input10.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+		     if(document.mailform.input11.value == null || document.mailform.input11.value == "") {
+		          pass = "no";
+		          alert('Please fill out all required fields');
+		          return false;
+		     }
+		     
+			if(document.mailform.terms.checked) {
+
+			}
+			else {
+				alert('You must agree to the terms at the bottom of this form to proceed');
+				pass = "no";
+			}
+		     
+		     if(pass == "yes"){
+		          document.mailform.submit();
+		     }
+		}
+	</script>
+</head>
+<body>
+<div id='header'>
+     <a href='index.html'
+          onmouseout='document.products.src="images/products-1.gif";'
+          onmouseover='document.products.src="images/products-2.gif";'>
+          <img alt='products' name='products' border='0' src='images/products-1.gif' />
+     </a>
+     <a href='free-quote.html'
+          onmouseout='document.freequote.src="images/free-quote-1.gif";'
+          onmouseover='document.freequote.src="images/free-quote-2.gif";'>
+          <img alt='free quotes' name='freequote' border='0' src='images/free-quote-1.gif' />
+     </a>
+     <a href='customer-service.html'>
+          <img alt='customer service' name='customerservice' border='0' src='images/customer-service-3.gif' />
+     </a>
+     <a href='contact-us.html'
+          onmouseout='document.contactus.src="images/contact-us-1.gif";'
+          onmouseover='document.contactus.src="images/contact-us-2.gif";'>
+          <img alt='contact us' name='contactus' border='0' src='images/contact-us-1.gif' />
+     </a>
+</div>
+<div id='wrapper'>
+     <div id='sidebar'>
+          <div style='text-align: center;'>
+               <img alt='Arizona Clinic Insurace' src='images/arizona-clinic-logo.jpg' />
+               <img alt='Arizona Insurance Clinic' src='images/trans.png' height='16' width='40'/>
+               <a href='form-auto-id-cards.html'
+                    onmouseover='document.csautoidcards.src="images/cs-autoidcards-2.gif";'
+                    onmouseout='document.csautoidcards.src="images/cs-autoidcards-1.gif";'>
+                    <img alt='Auto ID Cards' name='csautoidcards' style='padding-top:4px; padding-bottom:4px;' src='images/cs-autoidcards-1.gif' border='0'/>
+               </a>
+               <a href='form-name-change.html'
+                    onmouseover='document.namechange.src="images/cs-namechange-2.gif";'
+                    onmouseout='document.namechange.src="images/cs-namechange-1.gif";'>
+                    <img alt='Name Change' name='namechange' style='padding-top:4px; padding-bottom:4px;' src='images/cs-namechange-1.gif'/>
+               </a>
+               <a href='form-change-of-address.html'
+                    onmouseover='document.changeofaddress.src="images/cs-changeofaddress-2.gif";'
+                    onmouseout='document.changeofaddress.src="images/cs-changeofaddress-1.gif";'>
+                    <img alt='Change of Address' name='changeofaddress' style='padding-top:4px; padding-bottom:4px;' src='images/cs-changeofaddress-1.gif'/>
+               </a>
+               <a href='form-auto-loss-notice.html'
+                    onmouseover='document.autolossnotice.src="images/cs-autolossnotice-2.gif";'
+                    onmouseout='document.autolossnotice.src="images/cs-autolossnotice-1.gif";'>
+                    <img alt='Auto Loss Notice' name='autolossnotice' style='padding-top:4px; padding-bottom:4px;' src='images/cs-autolossnotice-1.gif'/>
+               </a>
+               <a href='form-add-a-driver.html'
+                    onmouseover='document.addadriver.src="images/cs-addadriver-2.gif";'
+                    onmouseout='document.addadriver.src="images/cs-addadriver-1.gif";'>
+                    <img alt='Add A Driver' name='addadriver' style='padding-top:4px; padding-bottom:4px;' src='images/cs-addadriver-1.gif'/>
+               </a>
+               <a href='form-remove-a-driver.html'>
+                    <img alt='Remove A Drive' name='removeadriver' style='padding-top:4px; padding-bottom:4px;' src='images/cs-removeadriver-3.gif'/>
+               </a>
+               <a href='form-add-a-vehicle.html'
+                    onmouseover='document.addavehicle.src="images/cs-addavehicle-2.gif";'
+                    onmouseout='document.addavehicle.src="images/cs-addavehicle-1.gif";'>
+                    <img alt='Add A Vehicle' name='addavehicle' style='padding-top:4px; padding-bottom:4px;' src='images/cs-addavehicle-1.gif'/>
+               </a>
+               <a href='form-remove-a-vehicle.html'
+                    onmouseover='document.removeavehicle.src="images/cs-removeavehicle-2.gif";'
+                    onmouseout='document.removeavehicle.src="images/cs-removeavehicle-1.gif";'>
+                    <img alt='Remove A Vehicle' name='removeavehicle' style='padding-top:4px; padding-bottom:4px;' src='images/cs-removeavehicle-1.gif'/>
+               </a>
+          </div>
+     </div>
+     <div id='main'>
+          <h1>Remove A Driver</h1>
+               <br />
+			
+			<form method='post' action='customer-service-submit.php' name='mailform'>
+			<input type='hidden' name='subject' value='Remove A Driver'/>
+			<input type='hidden' name='totalinput' value='12'/>
+			
+			<table id='form-autoinsurance' cellpadding="0" cellspacing="0">
+			<tr>
+				<td height='40' width='250' align='right'>
+					<span class='maintext1'>
+						Current Auto Policy Number:
+					</span>
+				</td>
+				<td width='20'>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden1' value='Policy Number'/>
+					<input type="text" name="input1" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Name on Policy*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden2' value='Clients Name'/>
+					<input type="text" name="input2" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Email Address:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden3' value='Email Address'/>
+					<input type="text" name="input3" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Daytime Telephone Number*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden4' value='Daytime Telephone Number'/>
+					<input type="text" name="input4" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Effective Date of Policy Change*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden5' value='Effective Date of Policy Change'/>
+					<input type="text" name="input5" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Full Name of Driver to Remove*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden6' value='Full Name of Driver to Remove'/>
+					<input type="text" name="input6" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Date of Birth*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden7' value='Date of Birth'/>
+					<input type="text" name="input7" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Gender*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden8' value='Gender'/>
+					<select name="input8">
+						<option> Male </option>
+						<option> Female </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Marital Status*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden9' value='Marital Status'/>
+					<input type="text" name="input9" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						Drivers License Number*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden10' value='Drivers License Number'/>
+					<input type="text" name="input10" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>
+						State that issued Drivers License*:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden11' value='State that issued Drivers License'/>
+					<input type="text" name="input11" size="20"/>			
+				</td>
+			</tr>
+			<tr>
+				<td height='75' align='right'>
+					<span class='maintext1'>
+						Comments or questions:
+					</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					<input type='hidden' name='hidden12' value='Comments or questions'/>
+					<textarea name="input12" cols="24" rows='4'></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td height='40' align='right'>
+					<span class='maintext1'>Items marked with a * are required</span>
+				</td>
+				<td>&nbsp;</td><td>&nbsp;</td>
+			</tr>
+			</table>
+			
+			<table border='0' cellpadding='0' cellspacing='0' width='520'>
+			<tr>
+				<td>
+					<span class='maintext1'><br />
+					<input type='checkbox' name='terms'/> IMPORTANT! I have read and understand the following:<br />&nbsp;<br />
+By checking this box and submitting this form you agree that no policy changes are made, no coverage is bound, and no policy is in effect until you are contacted by one of our representatives. Your information is held in the strictest confidence and is only gathered for the purposes of providing you service with your insurance needs. To more correctly assess your needs, please provide the most accurate information possible.<br />&nbsp;<br /><br /></span>
+				</td>
+			</tr>
+			<tr>
+				<td align='center'>
+					<a name='submit'></a><a href='#submit' onclick='CheckRequiredFields()'><img alt='Submit' src='images/formsubmit.gif' border='0'/></a>
+				</td>
+			</tr>
+			</table>
+		
+			</form>
+     </div>
+     
+     <div id='clearboth'></div>
+     
+</div>
+
+<div id='footer'>
+     <div class='footeritem'><a class='footerlink' href='index.html'>Products</a></div>
+     <div class='footeritem'><a class='footerlink' href='free-quote.html'>Free Quote</a></div>
+     <div class='footeritem'><a class='footerlink' href='customer-service.html'>Customer Service</a></div>                
+     <div class='footeritem'><a class='footerlink' href='contact-us.html'>Contact Us</a></div>
+     <div class='footeritem'>
+          © Arizona Insurance Clinic
+     </div>
+</div>
+     
+</body>
+</html>

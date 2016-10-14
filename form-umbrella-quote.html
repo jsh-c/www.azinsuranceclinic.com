@@ -1,0 +1,1744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script language="JavaScript" type="text/javascript">
+
+<!-- hide JavaScript from non-JavaScript browsers
+
+// This script is a simplified adaptation from the
+
+// JavaScript Browser Sniffer
+
+// Eric Krok, Andy King, Michel Plungjan
+
+// see http://www.webreference.com/ for more information
+
+
+
+var agt=navigator.userAgent.toLowerCase();
+
+var appVer = navigator.appVersion.toLowerCase();
+
+var is_minor = parseFloat(appVer);
+
+var is_major = parseInt(is_minor);
+
+var iePos = appVer.indexOf('msie');
+
+if (iePos !=-1) {
+
+is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+
+is_major = parseInt(is_minor);
+
+}
+
+var is_getElementById = (document.getElementById) ? "true" : "false";
+
+var is_getElementsByTagName = (document.getElementsByTagName) ? "true" : "false";
+
+var is_documentElement = (document.documentElement) ? "true" : "false";
+
+var is_ie = ((iePos!=-1));
+
+var is_ie6 = (is_ie && is_major == 6);
+
+
+
+if(is_ie6) {
+
+     document.write("<link href='arizonaclinicie6.css' type='text/css' rel='stylesheet' />");
+
+} else {
+
+     document.write("<link href='arizonaclinic.css' type='text/css' rel='stylesheet' />");
+
+}
+
+// -->
+
+</script>
+
+<title>Arizona Clinic Insurance</title>
+
+	<script language='javascript' type='text/JavaScript'>
+
+	<!--
+
+		function isNumeric(string)
+
+		{
+
+			var numaric = string;
+
+			for(var j=0; j<numaric.length; j++){
+
+				  
+
+				var alphaa = numaric.charAt(j);
+
+				var hh = alphaa.charCodeAt(0);
+
+				if((hh > 47 && hh<59)){
+
+				    //do nothing
+
+				}
+
+				else
+
+					 return false;
+
+			}
+
+		 return true;
+
+		}
+
+
+
+		function CheckRequiredFields() {
+
+		     var pass = "yes";
+
+			
+
+		     if(document.mailform.input1.value == null || document.mailform.input1.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input2.value == null || document.mailform.input2.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input3.value == null || document.mailform.input3.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     } else if(!isNumeric(document.mailform.input3.value)) {
+
+		          pass = "no";
+
+		          alert('Please use only numbers in phone number fields');
+
+		          return false;
+
+			 }
+
+		     
+
+		     if(document.mailform.input6.value == null || document.mailform.input6.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input7.value == null || document.mailform.input7.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input8.value == null || document.mailform.input8.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input9.value == null || document.mailform.input9.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input10[0].checked == false && document.mailform.input10[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input11[0].checked == false && document.mailform.input11[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input12[0].checked == false && document.mailform.input12[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input13[0].checked == false && document.mailform.input13[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input14[0].checked == false && document.mailform.input14[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input15[0].checked == false && document.mailform.input15[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input16[0].checked == false && document.mailform.input16[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input17[0].checked == false && document.mailform.input17[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input18[0].checked == false && document.mailform.input18[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input19[0].checked == false && document.mailform.input19[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input20[0].checked == false && document.mailform.input20[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input21[0].checked == false && document.mailform.input21[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input22[0].checked == false && document.mailform.input22[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input24.value == null || document.mailform.input24.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input26.value == null || document.mailform.input26.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input27.value == null || document.mailform.input27.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input28.value == null || document.mailform.input28.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input29.value == null || document.mailform.input29.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input30.value == null || document.mailform.input30.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input31.value == null || document.mailform.input31.value == "") {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+		     if(document.mailform.input32[0].checked == false && document.mailform.input32[1].checked == false) {
+
+		          pass = "no";
+
+		          alert('Please fill out all required fields');
+
+		          return false;
+
+		     }
+
+		     
+
+			if(document.mailform.terms.checked) {
+
+
+
+			}
+
+			else {
+
+				alert('You must agree to the terms at the bottom of this form to proceed');
+
+				pass = "no";
+
+			}
+
+		     
+
+		     if(pass == "yes"){
+
+		          document.mailform.submit();
+
+		     }
+
+		}
+
+	-->
+
+	</script>
+
+</head>
+
+<body>
+
+<div id='header'>
+
+     <a href='index.html'
+
+          onmouseout='document.products.src="images/products-1.gif";'
+
+          onmouseover='document.products.src="images/products-2.gif";'>
+
+          <img alt='products' name='products' border='0' src='images/products-1.gif' />
+
+     </a>
+
+     <a href='free-quote.html'>
+
+          <img alt='free quotes' name='freequote' border='0' src='images/free-quote-3.gif' />
+
+     </a>
+
+     <a href='customer-service.html'
+
+          onmouseout='document.customerservice.src="images/customer-service-1.gif";'
+
+          onmouseover='document.customerservice.src="images/customer-service-2.gif";'>
+
+          <img alt='customer service' name='customerservice' border='0' src='images/customer-service-1.gif' />
+
+     </a>
+
+     <a href='contact-us.html'
+
+          onmouseout='document.contactus.src="images/contact-us-1.gif";'
+
+          onmouseover='document.contactus.src="images/contact-us-2.gif";'>
+
+          <img alt='contact us' name='contactus' border='0' src='images/contact-us-1.gif' />
+
+     </a>
+
+</div>
+
+<div id='wrapper'>
+
+     <div id='sidebar'>
+
+          <div style='text-align: center;'>
+
+               <img alt='Arizona Clinic Insurace' src='images/arizona-clinic-logo.jpg' />
+
+               <img alt='Arizona Insurance Clinic' src='images/trans.png' height='16' width='40'/>
+
+               <a href='https://www.agentinsure.net/compare/auto-insurance-home-insurance/azinsurance/quote.aspx'
+
+                    onmouseover='document.autoquote.src="images/fq-autoquote-2.gif";'
+
+                    onmouseout='document.autoquote.src="images/fq-autoquote-1.gif";'>
+
+                    <img alt='Auto Quote' name='autoquote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-autoquote-1.gif'/>
+
+               </a>
+
+               <a href='https://www.agentinsure.net/compare/auto-insurance-home-insurance/azinsurance/quote.aspx'
+
+                    onmouseover='document.homequote.src="images/fq-homequote-2.gif";'
+
+                    onmouseout='document.homequote.src="images/fq-homequote-1.gif";'>
+
+                    <img alt='Home Quote' name='homequote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-homequote-1.gif'/>
+
+               </a>
+
+               <a href='form-umbrella-quote.html'>
+
+                    <img alt='Umbrella Quote' name='umbrellaquote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-umbrellaquote-3.gif'/>
+
+               </a>
+
+               <a href='form-life-quote.html'
+
+                    onmouseover='document.lifequote.src="images/fq-lifequote-2.gif";'
+
+                    onmouseout='document.lifequote.src="images/fq-lifequote-1.gif";'>
+
+                    <img alt='Life Quote' name='lifequote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-lifequote-1.gif'/>
+
+               </a>
+
+               <a href='form-health-quote.html'
+
+                    onmouseover='document.healthquote.src="images/fq-healthquote-2.gif";'
+
+                    onmouseout='document.healthquote.src="images/fq-healthquote-1.gif";'>
+
+                    <img alt='Health Quote' name='healthquote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-healthquote-1.gif'/>
+
+               </a>
+
+               <a href='form-business-owners-quote.html'
+
+                    onmouseover='document.businessownersquote.src="images/fq-businessownersquote-2.gif";'
+
+                    onmouseout='document.businessownersquote.src="images/fq-businessownersquote-1.gif";'>
+
+                    <img alt='Business Owners Quote' name='businessownersquote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-businessownersquote-1.gif'/>
+
+               </a>
+
+               <a href='form-business-auto-quote.html'
+
+                    onmouseover='document.businessautoquote.src="images/fq-businessautoquote-2.gif";'
+
+                    onmouseout='document.businessautoquote.src="images/fq-businessautoquote-1.gif";'>
+
+                    <img alt='Business Auto Quote' name='businessautoquote' style='padding-top:5px; padding-bottom:5px;' src='images/fq-businessautoquote-1.gif'/>
+
+               </a>
+
+          </div>
+
+     </div>
+
+     <div id='main'>
+
+          <h1>Umbrella Quote</h1>
+
+
+
+    		<form method='post' action='quote-submit.php' name='mailform'>
+
+    		<input type='hidden' name='subject' value='Umbrella Quote'/>
+
+    		<input type='hidden' name='totalinput' value='36'/>
+
+    		
+
+    		<table id='form-autoinsurance' cellpadding="0" cellspacing="0">
+
+    		<tr>
+
+    			<td height='40' width='250' align='right'>
+
+    				<span class='maintext1'>
+
+    					First Name*:
+
+    				</span>
+
+    			</td>
+
+    			<td width='20'>&nbsp;</td>
+
+    			<td width='250'>
+
+    				<input type='hidden' name='hidden1' value='First Name'/>
+
+    				<input type="text" name="input1" size="20"/>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Last Name*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden2' value='Last Name'/>
+
+    				<input type="text" name="input2" size="20"/>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Daytime Telephone Number*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden3' value='Daytime Telephone Number'/>
+
+    				<input type="text" name="input3" size="20"/>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Evening Telephone Number:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden4' value='Evening Telephone Number'/>
+
+    				<input type="text" name="input4" size="20"/>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Email Address:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden5' value='Email Address'/>
+
+    				<input type="text" name="input5" size="20"/>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Street Address*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden6' value='Street Address'/>
+
+    				<input type="text" name="input6" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					City*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden7' value='City'/>
+
+    				<input type="text" name="input7" size="20"/>	
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					State*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden8' value='State'/>
+
+    				<input type="text" name="input8" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Zip*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden9' value='Zip'/>
+
+    				<input type="text" name="input9" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Are any aircraft owned,<br/>
+
+    					leased, chartered or<br/>
+
+    					furnished for regular use*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden10' value='Are any aircraft owned, leased, chartered or furnished for regular use'/>
+
+    				<input type="radio" name="input10" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input10" value='No'/> No<br/>	
+
+    				</span>		
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Do any drivers have<br/>
+
+    					mental or physical impairments*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden11' value='Do any drivers have mental or physical impairments'/>
+
+    				<input type="radio" name="input11" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input11" value='No'/> No<br/>	
+
+    				</span>			
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Are any premises, vehicles,<br/>
+
+    					watercraft, aircraft used<br/>
+
+    					for business*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden12' value='Are any premises, vehicles, watercraft, aircraft used for business'/>
+
+    				<input type="radio" name="input12" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input12" value='No'/> No<br/>	
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='100' align='right'>
+
+    				<span class='maintext1'>
+
+    					Are any premises, vehicles,<br/>
+
+    					watercraft, aircraft owned,<br/>
+
+    					hired, leased or regularly<br/>
+
+    					used not covered by the<br/>
+
+    					primary policies*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden13' value='Are any premises, vehicles, watercraft, aircraft owned, hired, leased or regularly used not covered by the primary policies'/>
+
+    				<input type="radio" name="input13" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input13" value='No'/> No<br/>	
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Do you engage in any type<br/>
+
+    					of farming operation*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden14' value='Do you engage in any type of farming operation'/>
+
+    				<input type="radio" name="input14" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input14" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Do you hold any<br/>
+
+    					non-remunerative positions*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden15' value='Do you hold any non-remunerative positions'/>
+
+    				<input type="radio" name="input15" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input15" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Do you employ any<br/>
+
+    					residence employees*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden16' value='Do you employ any residence employees'/>
+
+    				<input type="radio" name="input16" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input16" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Any non-owned property exceeding<br/>
+
+    					$1,000 in value in your care,<br/>
+
+    					custody or control*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden17' value='Any non-owned property exceeding $1,000 in value in your care, custody or control'/>
+
+    				<input type="radio" name="input17" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input17" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Any non-owned business or<br/>
+
+    					professional activities included<br/>
+
+    					in the primary policies*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden18' value='Any non-owned business or professional activities included in the primary policies'/>
+
+    				<input type="radio" name="input18" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input18" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='80' align='right'>
+
+    				<span class='maintext1'>
+
+    					Does any primary policy have<br/>
+
+    					reduced limits of liability<br/>
+
+    					or eliminate coverage for<br/>
+
+    					specific exposures*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden19' value='Does any primary policy have reduced limits of liability or eliminate coverage for specific exposures'/>
+
+    				<input type="radio" name="input19" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input19" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Was any coverage declined,<br/>
+
+    					cancelled or non-renewed<br/>
+
+    					within the past 5 years*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden20' value='Was any coverage declined, cancelled or non-renewed within the past 5 years'/>
+
+    				<input type="radio" name="input20" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input20" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Any motorcycles, mopeds or<br/>
+
+    					all terrain vehicles owned*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden21' value='Any motorcycles, mopeds or all terrain vehicles owned'/>
+
+    				<input type="radio" name="input21" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input21" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					Any other business activities<br/>
+
+    					conducted from your residence<br/>
+
+    					or premises*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden22' value='Any other business activities conducted from your residence or premises'/>
+
+    				<input type="radio" name="input22" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input22" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Please explain any YES<br/>
+
+    					answers from above:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden23' value='Please explain any YES answers from above'/>
+
+    				<textarea name="input23" cols="24" rows='4'></textarea>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Are there drivers under 25<br/>
+
+    					years of age*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden24' value='Are there drivers under 25 yrs of age'/>
+
+    				<input type="text" name="input24" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					If yes state how many:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden25' value='If yes state how many'/>
+
+    				<input type="text" name="input25" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of<br/>
+
+    					autos you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden26' value='What is the number of autos you own'/>
+
+    				<input type="text" name="input26" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of<br/>
+
+    					recreational vehicles you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden27' value='What is the number of recreational vehicles you own'/>
+
+    				<input type="text" name="input27" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of<br/>
+
+    					single family dwellings you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden28' value='What is the number of single family dwellings you own'/>
+
+    				<input type="text" name="input28" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of<br/>
+
+    					multi-unit buildings you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden29' value='What is the number of multi-unit buildings you own'/>
+
+    				<input type="text" name="input29" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of vacant<br/>
+
+    					property (land) you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden30' value='What is the number of vacant property (land) you own'/>
+
+    				<input type="text" name="input30" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the number of<br/>
+
+    					motorcycles you own*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden31' value='What is the number of motorcycles you own'/>
+
+    				<input type="text" name="input31" size="20"/>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					Where there any losses or<br/>
+
+    					claims in the last 5 years*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<span class='maintext1'>
+
+    				<input type='hidden' name='hidden32' value='Where there any losses or claims in the last 5 years'/>
+
+    				<input type="radio" name="input32" value='Yes'/> Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    				<input type="radio" name="input32" value='No'/> No<br/>
+
+    				</span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='70' align='right'>
+
+    				<span class='maintext1'>
+
+    					If yes, what is the date,<br/>
+
+    					amount paid and description<br/>
+
+    					of each loss or claim?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden33' value='If yes, what is the date, amount paid and description of each loss or claim'/>
+
+    				<textarea name="input33" cols="24" rows='4'></textarea>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='60' align='right'>
+
+    				<span class='maintext1'>
+
+    					What is the liability<br/>
+
+    					limit requested*?
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden34' value='What is the liability limit requested'/>
+
+    				<select name='input34'>
+
+    					<option> $100,000 </option>
+
+    					<option> $300,000 </option>
+
+    					<option> $500,000 </option>
+
+    					<option> $1,000,000 </option>
+
+    				</select>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Comments or Questions:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden35' value='Comments or Questions'/>
+
+    				<textarea name="input35" cols="24" rows='4'></textarea>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td height='40' align='right'>
+
+    				<span class='maintext1'>
+
+    					Deliver quote via*:
+
+    				</span>
+
+    			</td>
+
+    			<td>&nbsp;</td>
+
+    			<td>
+
+    				<input type='hidden' name='hidden36' value='Deliver quote via'/>
+
+    				<select name='input36'>
+
+    					<option> Email </option>
+
+    					<option> Fax </option>
+
+    					<option> Regular Mail </option>
+
+    					<option> Telephone </option>
+
+    				</select>
+
+    			</td>
+
+    		</tr>
+
+			<tr>
+
+				<td height='40' align='right'>
+
+					<span class='maintext1'>Items marked with a * are required</span>
+
+				</td><td>&nbsp;</td><td>&nbsp;</td>
+
+			</tr>
+
+    		</table>
+
+    		
+
+    		<table border='0' cellpadding='0' cellspacing='0' width='520'>
+
+    		<tr>
+
+    			<td>
+
+    				<span class='maintext1'><br/>
+
+    				<input type='checkbox' name='terms'/> IMPORTANT! I have read and understand the following:<br/>&nbsp;<br/>
+
+    By checking this box and submitting this form you agree that no policy changes are made, no coverage is bound, and no policy is in effect until you are contacted by one of our representatives. Your information is held in the strictest confidence and is only gathered for the purposes of providing you service with your insurance needs. To more correctly assess your needs; please provide the most accurate information possible.<br/>&nbsp;<br/><br/></span>
+
+    			</td>
+
+    		</tr>
+
+    		<tr>
+
+    			<td align='center'>
+
+    				<a name='submit'></a><a href='#submit' onclick='CheckRequiredFields()'><img alt='Submit' src='images/formsubmit.gif' border='0'/></a>
+
+    			</td>
+
+    		</tr>
+
+    		</table>
+
+    
+
+    		</form>
+
+     </div>
+
+     
+
+     <div id='clearboth'></div>
+
+     
+
+</div>
+
+
+
+<div id='footer'>
+
+     <div class='footeritem'><a class='footerlink' href='index.html'>Products</a></div>
+
+     <div class='footeritem'><a class='footerlink' href='free-quote.html'>Free Quote</a></div>
+
+     <div class='footeritem'><a class='footerlink' href='customer-service.html'>Customer Service</a></div>                
+
+     <div class='footeritem'><a class='footerlink' href='contact-us.html'>Contact Us</a></div>
+
+     <div class='footeritem'>
+
+          © Arizona Insurance Clinic
+
+     </div>
+
+</div>
+
+     
+
+</body>
+
+</html>
+

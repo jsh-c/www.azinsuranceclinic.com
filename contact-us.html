@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="JavaScript" type="text/javascript">
+<!-- hide JavaScript from non-JavaScript browsers
+// This script is a simplified adaptation from the
+// JavaScript Browser Sniffer
+// Eric Krok, Andy King, Michel Plungjan
+// see http://www.webreference.com/ for more information
+
+var agt=navigator.userAgent.toLowerCase();
+var appVer = navigator.appVersion.toLowerCase();
+var is_minor = parseFloat(appVer);
+var is_major = parseInt(is_minor);
+var iePos = appVer.indexOf('msie');
+if (iePos !=-1) {
+is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+is_major = parseInt(is_minor);
+}
+var is_getElementById = (document.getElementById) ? "true" : "false";
+var is_getElementsByTagName = (document.getElementsByTagName) ? "true" : "false";
+var is_documentElement = (document.documentElement) ? "true" : "false";
+var is_ie = ((iePos!=-1));
+var is_ie6 = (is_ie && is_major == 6);
+
+if(is_ie6) {
+     document.write("<link href='arizonaclinicie6.css' type='text/css' rel='stylesheet' />");
+} else {
+     document.write("<link href='arizonaclinic.css' type='text/css' rel='stylesheet' />");
+}
+// -->
+</script>
+<title>Arizona Clinic Insurance</title>
+</head>
+<body>
+<div id='header'>
+     <a href='index.html'
+          onmouseout='document.products.src="images/products-1.gif";'
+          onmouseover='document.products.src="images/products-2.gif";'>
+          <img alt='products' name='products' border='0' src='images/products-1.gif' />
+     </a>
+     <a href='free-quote.html'
+          onmouseout='document.freequote.src="images/free-quote-1.gif";'
+          onmouseover='document.freequote.src="images/free-quote-2.gif";'>
+          <img alt='free quotes' name='freequote' border='0' src='images/free-quote-1.gif' />
+     </a>
+     <a href='customer-service.html'
+          onmouseout='document.customerservice.src="images/customer-service-1.gif";'
+          onmouseover='document.customerservice.src="images/customer-service-2.gif";'>
+          <img alt='customer service' name='customerservice' border='0' src='images/customer-service-1.gif' />
+     </a>
+     <a href='contact-us.html'>
+          <img alt='contact us' name='contactus' border='0' src='images/contact-us-3.gif' />
+     </a>
+</div>
+<div id='wrapper'>
+     <div id='sidebar'>
+          <div style='text-align: center;'>
+          <img alt='Arizona Clinic Insurace' src='images/arizona-clinic-logo.jpg' /><br />
+          </div>
+     <img alt='Arizona Insurance Clinic' src='images/arizona-clinic-products.jpg'/>
+     </div>
+     <div id='main'>
+          <h1>Contact Arizona Insurance Clinic<br />&nbsp;<br /></h1>
+          <table style='width: 100%; padding-top; 30px;'><tr>
+               <td style='width: 50%;'>
+                    <span class='maintext' style='font-weight:bold;'>
+                         <span style='font-size: 13pt;'>Phone<br /><br /></span>
+                         520-323-6887<br /><br /><br />
+                         <span style='font-size: 13pt;'>Fax<br /><br /></span>
+                         520-323-9665<br /><br /><br />
+                         <span style='font-size: 13pt;'>Email<br /><br /></span>
+                         <a class='contactuslinks' href='mailto:info@lowlowinsurancerates.com'><span class='maintext' style='font-weight:bold;'>info@lowlowinsurancerates.com</span></a><br /><br /><br />
+                    </span>
+               </td>
+               <td valign='top'>
+                    <span class='maintext' style='font-weight:bold;'>
+                         <span style='font-size: 13pt;'>Address<br /><br /></span>
+                         Arizona Insurance Clinic<br />
+                         4925 5th St<br />
+                         Suite 101<br />
+                         Tucson AZ, 85711<br />
+                    </span>
+               </td>
+          </tr>
+          </table>
+     </div>
+     
+     <div id='clearboth'></div>
+     
+</div>
+
+<div id='footer'>
+     <div class='footeritem'><a class='footerlink' href='index.html'>Products</a></div>
+     <div class='footeritem'><a class='footerlink' href='free-quote.html'>Free Quote</a></div>
+     <div class='footeritem'><a class='footerlink' href='customer-service.html'>Customer Service</a></div>                
+     <div class='footeritem'><a class='footerlink' href='contact-us.html'>Contact Us</a></div>
+     <div class='footeritem'>
+          © Arizona Insurance Clinic
+     </div>
+</div>
+     
+</body>
+</html>

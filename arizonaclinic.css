@@ -1,0 +1,316 @@
+
+
+* {margin: 0; padding: 0; border: 0; font-size: 0px; font-family: Verdana, Arial;}
+
+
+
+body {
+
+	margin: 10px 0 15px 0;
+
+	background-color: #243a93;
+
+}
+
+
+
+#wrapper {
+
+     margin: auto;
+
+     width: 785px;
+
+}
+
+
+
+#header {
+
+     width: 545px;
+
+     margin: auto;
+
+     height: 30px;
+
+     font-size: 0px;
+
+}
+
+
+
+#outline {
+
+     width: 100%;
+
+     background: url("images/main-background2.gif") repeat-x top #2c337b;
+
+     height: 504px;
+
+}
+
+
+
+#sidebar {
+
+     float: left;
+
+     width: 199px;
+
+     margin: 2px;
+
+     background: #FFFFFF;
+
+     height: 535px;
+
+}
+
+
+
+#main {
+
+     overflow-y:auto;
+
+     overflow-x:hidden;
+
+     float: right;
+
+     width: 535px;
+
+     margin: 2px 2px 2px 0;
+
+     background: #FFFFFF;
+
+	height: 500px;
+
+	padding: 15px 30px 20px 15px;
+
+}
+
+
+
+#footer {
+
+     width: 735px;
+
+     margin: auto;
+
+     margin-top: 3px;
+
+}
+
+
+
+.rightalign {
+
+     float: right;
+
+     }
+
+
+
+.leftalign {
+
+     float: left;
+
+     }
+
+
+
+#clearboth {
+
+     clear: both;
+
+     }
+
+
+
+.maintext {
+
+     font-size: 9pt;
+
+     margin-bottom: 10px;
+
+     line-height: 14pt;
+
+     }
+
+
+
+.maintext1 {
+
+     font-size: 8pt;
+
+     }
+
+     
+
+.footeritem {
+
+     float: left;
+
+     margin: 0 30px 0 30px;
+
+     font-size: 8pt;
+
+     color: #FFFFFF;
+
+     }
+
+
+
+h1 {
+
+     font-size: 15pt;
+
+     margin-bottom: 20px;
+
+     margin-top: 10px;
+
+     font-family: Tahoma, Arial;
+
+}
+
+
+
+A:link, A:active, A:visited{
+
+	text-decoration: none;
+
+	color:#2c337b;
+
+}
+
+
+
+a.footerlink {
+
+	color:#FFFFFF;
+
+	font-size: 8pt;
+
+}
+
+
+
+A:hover{
+
+	text-decoration: underline;
+
+	color: #8988ea;
+
+}
+
+
+
+#form-autoinsurance {
+
+	width:100%;
+
+}
+
+
+
+#form-autoinsurance td {
+
+	padding:5px;
+
+	font-size:10px;
+
+	border-bottom:1px solid #ccc;
+
+}
+
+
+
+#form-autoinsurance input, textarea, select {
+
+	font-size:10px;
+
+	border: 1px solid black;
+
+	padding: 2px;
+
+}
+
+
+
+#form-autoinsurance option {
+
+	font-size:10px;
+
+	border: 1px solid black;
+
+	padding: 0px;
+
+	padding-right: 8px;
+
+}
+
+
+
+#form-autoinsurance radio {
+
+	font-size:10px;
+
+	border: 0px;
+
+	padding: 2px;
+
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
