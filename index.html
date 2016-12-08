@@ -4,8 +4,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <title>Arizona Clinic Insurance</title>
+<meta name="description" content="Welcome to Arizona Insurance Clinic" />
+<meta name="keywords" content="Arizona,Tucson,Insurance,Clinic,Quote">
+
 <script src="standard.js" type="text/javascript"></script>
 <script language="JavaScript" type="text/javascript">
+     var isMobile = {
+         Android: function() {
+             return navigator.userAgent.match(/Android/i);
+         },
+         BlackBerry: function() {
+             return navigator.userAgent.match(/BlackBerry/i);
+         },
+         iOS: function() {
+             return navigator.userAgent.match(/iPhone|iPod/i);
+         },
+         Opera: function() {
+             return navigator.userAgent.match(/Opera Mini/i);
+         },
+         Windows: function() {
+             return navigator.userAgent.match(/IEMobile/i);
+         },
+         any: function() {
+             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+         }
+     };
+
+     if (isMobile.any()) {
+       window.location.href = 'http://m.azinsuranceclinic.com/'
+     }
+
 <!-- hide JavaScript from non-JavaScript browsers
 // This script is a simplified adaptation from the
 // JavaScript Browser Sniffer
@@ -95,5 +123,16 @@ Unlike purchasing from an agent that only represents a single insurance company,
      </div>
 </div>
     
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88692912-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
